@@ -1,10 +1,12 @@
 body{
 margin:0;
-font-family:Arial;
-background:#0a0a0a;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
 color:white;
 text-align:center;
 }
+
+/* HERO */
 
 .hero{
 height:100vh;
@@ -20,8 +22,10 @@ position:relative;
 position:absolute;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.65);
 }
+
+/* NAVBAR */
 
 .navbar{
 position:absolute;
@@ -29,36 +33,58 @@ top:20px;
 left:20px;
 right:20px;
 display:flex;
+align-items:center;
 justify-content:space-between;
-z-index:2;
+z-index:3;
 }
+
+/* TITULO CENTRAL */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* MENU ICON */
 
 .menu-icon{
 font-size:30px;
 cursor:pointer;
+z-index:5;
 }
 
-.logo{
-font-size:20px;
-font-weight:bold;
-}
+/* MENU LATERAL */
 
 .menu{
-display:none;
-position:absolute;
-top:60px;
-left:20px;
+position:fixed;
+top:0;
+left:-250px;
+width:220px;
+height:100%;
 background:#111;
-padding:15px;
-border-radius:10px;
+padding-top:80px;
+transition:0.3s;
+box-shadow:5px 0 20px rgba(0,0,0,0.6);
+z-index:4;
 }
 
 .menu a{
 display:block;
 color:white;
 text-decoration:none;
-margin:10px 0;
+padding:15px 25px;
+font-size:18px;
+border-bottom:1px solid #222;
 }
+
+.menu a:hover{
+background:#1c1c1c;
+}
+
+/* HERO CONTENT */
 
 .hero-content{
 z-index:2;
@@ -67,46 +93,53 @@ padding:20px;
 }
 
 .hero h1{
-font-size:42px;
+font-size:40px;
 margin-bottom:20px;
 }
 
 .hero p{
-color:#ccc;
+color:#ddd;
 font-size:18px;
 }
 
+/* BOTÃO */
+
 .btn{
+display:inline-block;
+margin-top:25px;
 background:#39ff14;
-color:black;
-padding:15px 40px;
+padding:16px 45px;
 border-radius:40px;
 font-size:20px;
+color:black;
 text-decoration:none;
-display:inline-block;
-margin-top:20px;
+font-weight:bold;
 }
+
+/* SEÇÕES */
 
 .image-section img{
 width:100%;
 }
 
 .content{
-padding:80px 20px;
+padding:80px 25px;
 max-width:700px;
 margin:auto;
 }
 
 .content h2{
-font-size:34px;
+font-size:32px;
 margin-bottom:30px;
 }
 
 .content p{
-font-size:18px;
 color:#ccc;
 line-height:1.8;
+font-size:18px;
 }
+
+/* CONTATO */
 
 .contact{
 padding:80px 20px;
@@ -114,12 +147,18 @@ padding:80px 20px;
 
 .instagram{
 font-size:40px;
+margin-top:20px;
 }
 
+/* FOOTER */
+
 footer{
-padding:40px;
-color:#aaa;
+padding:40px 20px;
+color:#999;
+font-size:14px;
 }
+
+/* BOTÃO CHAT */
 
 .chat-button{
 position:fixed;
@@ -127,29 +166,12 @@ bottom:25px;
 right:25px;
 background:#39ff14;
 color:black;
-width:60px;
-height:60px;
+width:65px;
+height:65px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:25px;
-}
-
-.fade{
-animation:fadeUp 1s ease;
-}
-
-@keyframes fadeUp{
-
-from{
-opacity:0;
-transform:translateY(20px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
+font-size:26px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
