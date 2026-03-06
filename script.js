@@ -2,14 +2,10 @@ function toggleMenu(){
 
 let menu = document.getElementById("menu")
 
-if(menu.style.display == "block"){
-
-menu.style.display = "none"
-
+if(menu.style.left === "0px"){
+menu.style.left = "-250px"
 }else{
-
-menu.style.display = "block"
-
+menu.style.left = "0px"
 }
 
 }
