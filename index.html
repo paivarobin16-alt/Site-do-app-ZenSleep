@@ -107,13 +107,49 @@ Escolha sons relaxantes, ajuste volumes individuais e ative o timer para desliga
 
 </footer>
 
-<div class="chat-button">
-
+<div class="chat-button" onclick="openChat()">
 💬
-
 </div>
 
 <script src="script.js"></script>
+
+  <!-- CHAT WINDOW -->
+
+<div id="chatBox" class="chat-box">
+
+<div class="chat-header">
+
+<span>Zen Sleep App</span>
+
+<button onclick="closeChat()">✕</button>
+
+</div>
+
+<div class="chat-message">
+
+Olá! Diga-nos como podemos ajudar você.  
+Responderemos em breve.
+
+</div>
+
+<form class="chat-form">
+
+<input type="text" placeholder="Nome*" required>
+
+<input type="email" placeholder="E-mail*" required>
+
+<textarea placeholder="Como podemos ajudar?*" required></textarea>
+
+<label class="newsletter">
+<input type="checkbox">
+Inscreva-se para receber atualizações por email e muito mais.
+</label>
+
+<button type="submit" class="send-btn">Enviar</button>
+
+</form>
+
+</div>
 
 </body>
 
