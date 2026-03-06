@@ -2,10 +2,16 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zen Sleep App</title>
+
+<title>ZenSleep App</title>
+
+<meta name="description" content="ZenSleep - Aplicativo de sons relaxantes para melhorar o sono e reduzir o estresse.">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -14,17 +20,31 @@
 
 <div class="overlay"></div>
 
+<nav class="navbar">
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div class="logo">Zen Sleep App</div>
+
+</nav>
+
+<div class="menu" id="menu">
+
+<a href="#sobre">Sobre</a>
+<a href="#como">Como Funciona</a>
+<a href="privacy.html">Política</a>
+
+</div>
+
 <div class="hero-content">
 
-<h1>Zen Sleep App</h1>
+<h1 class="fade">Melhore seu Sono com ZenSleep</h1>
 
-<h2>Melhore seu Sono<br>com ZenSleep</h2>
-
-<p>
+<p class="fade">
 Descubra como o app Zen Sleep transforma suas noites.
 </p>
 
-<a href="https://www.amazon.com/gp/product/B0GPN2HCNK" class="btn">
+<a href="https://www.amazon.com/gp/product/B0GPN2HCNK" class="btn fade">
 Baixe o Aplicativo
 </a>
 
@@ -38,34 +58,36 @@ Baixe o Aplicativo
 
 </section>
 
-<section class="content">
+<section class="content" id="sobre">
 
 <h2>Sobre Zen Sleep App</h2>
 
-<h3>Benefícios do Zen Sleep App</h3>
-
 <p>
 ZenSleep ajuda você a dormir melhor, reduzir o estresse e relaxar a mente com sons naturais de alta qualidade.
-Combine ambientes, ajuste volumes individuais e use o timer para criar a experiência perfeita — simples, eficaz e 100% gratuita.
 </p>
 
-<h3>O que é Zen Sleep App?</h3>
-
 <p>
-ZenSleep é um aplicativo de sons relaxantes desenvolvido para melhorar o sono e reduzir o estresse.
-Com sons naturais como chuva, mar, floresta e lareira, ele permite criar ambientes personalizados com controle de volume individual e timer inteligente — tudo de forma simples, leve e 100% gratuita.
+Combine ambientes, ajuste volumes individuais e use o timer para criar a experiência perfeita.
 </p>
 
 </section>
 
 <section class="content">
 
+<h2>O que é Zen Sleep App?</h2>
+
+<p>
+ZenSleep é um aplicativo de sons relaxantes com chuva, mar, floresta e lareira para criar ambientes tranquilos.
+</p>
+
+</section>
+
+<section class="content" id="como">
+
 <h2>Como Funciona</h2>
 
 <p>
-Basta escolher um ou mais sons relaxantes, ajustar o volume de cada um e pressionar play.
-Você pode combinar diferentes ambientes, salvar seus favoritos e ativar o timer para que os sons desliguem automaticamente.
-Simples, rápido e totalmente gratuito.
+Escolha sons relaxantes, ajuste volumes individuais e ative o timer para desligar automaticamente.
 </p>
 
 </section>
@@ -74,17 +96,24 @@ Simples, rápido e totalmente gratuito.
 
 <h2>Fale conosco</h2>
 
-<div class="instagram">📷</div>
+<a href="#" class="instagram">📷</a>
 
 </section>
 
 <footer>
 
-<p>Copyright © 2026 Zen Sleep App – Todos os direitos reservados.</p>
-
+<p>Copyright © 2026 Zen Sleep App</p>
 <p>Desenvolvido por Luxe Charms</p>
 
 </footer>
+
+<div class="chat-button">
+
+💬
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 
